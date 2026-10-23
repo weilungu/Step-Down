@@ -1,16 +1,22 @@
+using System;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    // Awake
+    PlayerMovement move;
+    
+    
+    // === Life Cycle === //
+    void Awake()
     {
-        
+        move = GetComponent<PlayerMovement>();
     }
 
-    // Update is called once per frame
     void Update()
     {
+        Vector2 dir = move.Direction;
         
+        transform.Translate(dir * move.Speed * Time.deltaTime);
     }
 }

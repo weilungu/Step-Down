@@ -2,15 +2,21 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    // Inspector
+    [SerializeField, Range(1f, 25f)] float speed = 1f;
+    
+    // Private
+    Vector2 direction;
+    
+    
+    // === API === //
+    
+    // Set
+    public void SetDirection(Vector2 dir)
+        => direction = dir;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
+    // Get
+    public Vector2 Direction => direction;
+    public float Speed => speed;
 }
