@@ -1,7 +1,11 @@
+using System;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    // Awake
+    Rigidbody2D rb;
+    
     // Inspector
     [SerializeField, Range(1f, 25f)] float speed = 1f;
     
@@ -9,11 +13,20 @@ public class PlayerMovement : MonoBehaviour
     Vector2 direction;
     
     
+    // === Life Cycle === //
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+
     // === API === //
     public void Movement()
     {
         Vector2 movement = direction * speed;
-        transform.Translate(movement * Time.deltaTime);
+        
+        rb.linearVelocity = movement;
+        // transform.Translate(movement * Time.deltaTime);
     }
     
     
