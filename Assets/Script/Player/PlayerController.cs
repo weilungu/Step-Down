@@ -15,8 +15,6 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        Vector2 dir = move.Direction;
-        
-        transform.Translate(dir * move.Speed * Time.deltaTime);
+        move.Movement();
     }
 }

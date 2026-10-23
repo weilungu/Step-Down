@@ -10,10 +10,15 @@ public class PlayerMovement : MonoBehaviour
     
     
     // === API === //
+    public void Movement()
+    {
+        Vector2 movement = direction * speed;
+        transform.Translate(movement * Time.deltaTime);
+    }
+    
     
     // Set
-    public void SetDirection(Vector2 dir)
-        => direction = dir;
+    public void SetDirection(Vector2 dir) => direction = dir;
 
     
     // Get
