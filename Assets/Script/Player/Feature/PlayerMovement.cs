@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField, Range(0f, 25f)] float speed = 1f;
     
     // Private
-    Vector2 moveDir, currDir;
+    Vector2 moveDir;
     
     
     // === Life Cycle === //
