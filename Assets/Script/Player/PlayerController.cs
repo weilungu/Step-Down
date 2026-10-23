@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
         move = GetComponent<PlayerMovement>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         move.Movement();
     }
