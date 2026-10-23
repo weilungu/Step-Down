@@ -20,6 +20,6 @@ public class PlayerInputHandler : MonoBehaviour
     {
         Vector2 dir = ctx.ReadValue<Vector2>();
         
-        movement.SetDirection(dir);
+        movement.SetMoveDirection(dir);
     }
 }
