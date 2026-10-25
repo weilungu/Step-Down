@@ -19,7 +19,9 @@ public class PlayerInputHandler : MonoBehaviour
     public void OnMove(InputAction.CallbackContext ctx)
     {
         Vector2 dir = ctx.ReadValue<Vector2>();
-        
         movement.SetMoveDirection(dir);
+        
+        if (ctx.performed)
+            print("on move");
     }
 }
