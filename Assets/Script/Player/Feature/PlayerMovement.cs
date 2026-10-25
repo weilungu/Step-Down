@@ -36,4 +36,6 @@ public class PlayerMovement : MonoBehaviour
     // Get
     public Vector2 MoveDirection => moveDir;
     public float Speed => speed;
+    
+    public bool CanMove = true;
 }

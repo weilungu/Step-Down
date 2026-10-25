@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour
 {
     // Awake
     SpriteRenderer sprite;
+    PlayerInputHandler input;
     
     PlayerMovement move;
     
@@ -19,6 +20,7 @@ public class PlayerController : MonoBehaviour
     void Awake()
     {
         sprite = GetComponentInChildren<SpriteRenderer>();
+        input = GetComponent<PlayerInputHandler>();
         
         move = GetComponent<PlayerMovement>();
     }
@@ -42,6 +44,7 @@ public class PlayerController : MonoBehaviour
 
             floorCollider.enabled = false;
             sprite.color = loseColor;
+            input.DisableMove();
             
             print("Collision Ceiling");
         }
