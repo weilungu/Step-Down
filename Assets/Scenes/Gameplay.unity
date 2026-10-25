@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 203086304}
   - component: {fileID: 203086306}
+  - component: {fileID: 203086307}
   m_Layer: 0
   m_Name: Floor-Normal
   m_TagString: Untagged
@@ -198,6 +199,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &203086307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203086303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0bb5ce5af87ba47ac15939bc1ebc1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FloorController
+  riseSpeed: 8
+  limited: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
