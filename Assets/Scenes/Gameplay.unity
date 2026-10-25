@@ -659,6 +659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc9e577d6309fd141abb897b288257f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  loseColor: {r: 1, g: 0.9025234, b: 0, a: 1}
 --- !u!114 &1209283958
 MonoBehaviour:
   m_ObjectHideFlags: 0
