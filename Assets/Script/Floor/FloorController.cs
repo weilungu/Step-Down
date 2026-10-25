@@ -18,8 +18,5 @@ public class FloorController : MonoBehaviour
     void Update()
     {
         rise.Rise();
-        
-        if (debugger.limited && transform.position.y >= debugger.spacing)
-            debugger.Limit();
     }
 }
