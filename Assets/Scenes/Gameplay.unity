@@ -130,6 +130,8 @@ GameObject:
   - component: {fileID: 203086304}
   - component: {fileID: 203086306}
   - component: {fileID: 203086307}
+  - component: {fileID: 203086308}
+  - component: {fileID: 203086309}
   m_Layer: 0
   m_Name: Floor-Normal
   m_TagString: Untagged
@@ -211,7 +213,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae0bb5ce5af87ba47ac15939bc1ebc1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FloorController
+--- !u!114 &203086308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203086303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef3c3e744d68af42bdc7a477657f1ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FloorRise
   riseSpeed: 8
+--- !u!114 &203086309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203086303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0a2bd76a002e8c44b612fc74d0e8d51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FloorDebugger
+  spacing: 5
   limited: 0
 --- !u!1 &519420028
 GameObject:
