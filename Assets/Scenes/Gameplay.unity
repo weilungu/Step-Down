@@ -130,8 +130,8 @@ GameObject:
   - component: {fileID: 203086304}
   - component: {fileID: 203086306}
   - component: {fileID: 203086307}
-  - component: {fileID: 203086308}
   - component: {fileID: 203086309}
+  - component: {fileID: 203086308}
   m_Layer: 0
   m_Name: Floor-Normal
   m_TagString: Untagged
