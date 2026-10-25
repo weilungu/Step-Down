@@ -16,12 +16,21 @@ public class PlayerInputHandler : MonoBehaviour
 
     
     // === Input System === //
+    // Enable
     public void OnMove(InputAction.CallbackContext ctx)
     {
+        if (!movement.CanMove) return;
+        
         Vector2 dir = ctx.ReadValue<Vector2>();
         movement.SetMoveDirection(dir);
         
         if (ctx.performed)
             print("on move");
+    }
+    
+    // Disable
+    public void DisableMove()
+    {
+        movement.CanMove = false;
     }
 }
