@@ -7,6 +7,8 @@ public class FloorController : MonoBehaviour
     FloorRise rise;
     FloorDebugger debugger;
     
+    // Inspector
+    [SerializeField] float destroyTime = 5f;
     
     // === Life Cycle === //
     void Awake()
@@ -19,7 +21,6 @@ public class FloorController : MonoBehaviour
     {
         rise.Rise();
         
-        if (debugger.limited && transform.position.y >= debugger.spacing)
-            debugger.Limit();
+        Destroy(gameObject, destroyTime);
     }
 }
