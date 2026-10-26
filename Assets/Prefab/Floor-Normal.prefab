@@ -197,4 +197,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef3c3e744d68af42bdc7a477657f1ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FloorRise
-  riseSpeed: 8
+  riseSpeed: 5
