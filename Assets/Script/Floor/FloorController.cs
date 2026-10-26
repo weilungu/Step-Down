@@ -5,7 +5,6 @@ public class FloorController : MonoBehaviour
 {
     // Awake
     FloorRise rise;
-    FloorDebugger debugger;
     
     // Inspector
     [SerializeField] float destroyTime = 5f;
@@ -14,7 +13,6 @@ public class FloorController : MonoBehaviour
     void Awake()
     {
         rise = GetComponent<FloorRise>();
-        debugger = GetComponent<FloorDebugger>();
     }
 
     void Update()
