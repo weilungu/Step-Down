@@ -5,21 +5,20 @@ public class FloorController : MonoBehaviour
 {
     // Awake
     FloorRise rise;
-    FloorDebugger debugger;
     
+    // Inspector
+    [SerializeField] float destroyTime = 5f;
     
     // === Life Cycle === //
     void Awake()
     {
         rise = GetComponent<FloorRise>();
-        debugger = GetComponent<FloorDebugger>();
     }
 
     void Update()
     {
         rise.Rise();
         
-        if (debugger.limited && transform.position.y >= debugger.spacing)
-            debugger.Limit();
+        Destroy(gameObject, destroyTime);
     }
 }
