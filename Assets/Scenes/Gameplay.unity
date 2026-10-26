@@ -244,6 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae0bb5ce5af87ba47ac15939bc1ebc1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FloorController
+  destroyTime: 2.5
 --- !u!114 &203086308
 MonoBehaviour:
   m_ObjectHideFlags: 0
