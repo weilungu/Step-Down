@@ -21,6 +21,6 @@ public class FloorController : MonoBehaviour
     {
         rise.Rise();
         
-        Destroy(gameObject, 5f);
+        Destroy(gameObject, destroyTime);
     }
 }
