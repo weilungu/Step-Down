@@ -6,7 +6,6 @@ public class FloorManager : MonoBehaviour
     // Awake
     FloorSpawn spawner;
     
-    // Inspector
     
     // Private
     float spawnTimer;
@@ -21,7 +20,7 @@ public class FloorManager : MonoBehaviour
     void Update()
     {
         spawnTimer += Time.deltaTime;
-        if (spawnTimer >= 1f)
+        if (spawnTimer >= spawner.interval)
         {
             spawner.SpawnFloor();
             spawnTimer = 0f;
