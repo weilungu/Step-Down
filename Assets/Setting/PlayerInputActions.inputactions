@@ -84,17 +84,6 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "up",
-                    "id": "25ba3c51-3fce-44cc-82a1-d02a99598167",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
                     "name": "down",
                     "id": "0c7dcc7c-02a3-4fd9-bc3f-084af2fd0b18",
                     "path": "",
@@ -128,7 +117,40 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "JoyStick",
+                    "name": "[JoyStick] Left Stick",
+                    "id": "6a65b5cd-b16a-47bb-81e9-05eca5103d73",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "left",
+                    "id": "2e31a58b-ad75-4ebb-9389-e34a6822c014",
+                    "path": "<Gamepad>/leftStick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "0114ce2c-30c6-4e9f-b03b-90aadd653b32",
+                    "path": "<Gamepad>/leftStick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "[JoyStick] D-Pad",
                     "id": "7f551654-0a92-40d6-8fbd-857742bb5249",
                     "path": "2DVector",
                     "interactions": "",
@@ -139,31 +161,9 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "up",
-                    "id": "91027410-d663-4af3-970b-50c69774fa48",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "5747ffba-8dc9-4543-a27b-89271a636f40",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
                     "name": "left",
                     "id": "d47ac7f3-eff9-4353-9905-4de5780ee180",
-                    "path": "",
+                    "path": "<Gamepad>/dpad/left",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -174,7 +174,7 @@
                 {
                     "name": "right",
                     "id": "b5c1a0a5-f8da-4484-a5be-6fba1fccac2d",
-                    "path": "",
+                    "path": "<Gamepad>/dpad/right",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
