@@ -29,31 +29,9 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "up",
-                    "id": "4fb55d9f-5747-4464-a1a5-6c979eba14f1",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "2903e631-6066-4bf9-8f58-4c5375cc601b",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
                     "name": "left",
                     "id": "4e083770-a936-455a-8a85-4f3b128e3ecb",
-                    "path": "",
+                    "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -64,7 +42,7 @@
                 {
                     "name": "right",
                     "id": "fe25fdfb-18f0-4aca-9600-7bcc2d6b19a7",
-                    "path": "",
+                    "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -84,20 +62,9 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "down",
-                    "id": "0c7dcc7c-02a3-4fd9-bc3f-084af2fd0b18",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
                     "name": "left",
                     "id": "3f12d3df-364b-4d05-9924-3f0724f838ac",
-                    "path": "",
+                    "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -108,7 +75,7 @@
                 {
                     "name": "right",
                     "id": "935f6dfe-0846-4cbc-966e-086c74cf781c",
-                    "path": "",
+                    "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
