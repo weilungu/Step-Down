@@ -8,8 +8,8 @@ public class PlatformRise : MonoBehaviour
     // === API === //
     public void Rise()
     {
-        Vector2 movement = Vector2.up * speed;
+        Vector2 rising = Vector2.up * speed;
         
-        transform.Translate(movement * Time.deltaTime);
+        transform.Translate(rising * Time.deltaTime);
     }
 }
