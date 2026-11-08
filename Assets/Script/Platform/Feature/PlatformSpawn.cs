@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class FloorSpawn : MonoBehaviour
+public class PlatformSpawn : MonoBehaviour
 {
     // Inspector
     [SerializeField] GameObject floor;

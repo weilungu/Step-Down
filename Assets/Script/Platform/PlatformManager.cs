@@ -4,7 +4,7 @@ using UnityEngine;
 public class FloorManager : MonoBehaviour
 {
     // Awake
-    FloorSpawn spawner;
+    PlatformSpawn spawner;
     
     
     // Private
@@ -14,7 +14,7 @@ public class FloorManager : MonoBehaviour
     // === Life Cycle === //
     void Awake()
     {
-        spawner = GetComponent<FloorSpawn>();
+        spawner = GetComponent<PlatformSpawn>();
     }
 
     void Update()

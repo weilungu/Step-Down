@@ -1,14 +1,14 @@
 using UnityEngine;
 
-public class FloorRise : MonoBehaviour
+public class PlatformRise : MonoBehaviour
 {
-    [SerializeField, Range(0f, 15f)] float riseSpeed = 1f;
+    [SerializeField, Range(0f, 15f)] float speed = 1f;
 
     
     // === API === //
     public void Rise()
     {
-        Vector2 movement = Vector2.up * riseSpeed;
+        Vector2 movement = Vector2.up * speed;
         
         transform.Translate(movement * Time.deltaTime);
     }

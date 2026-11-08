@@ -4,7 +4,7 @@ using UnityEngine;
 public class FloorController : MonoBehaviour
 {
     // Awake
-    FloorRise rise;
+    PlatformRise rise;
     
     // Inspector
     [SerializeField] float destroyTime = 5f;
@@ -12,7 +12,7 @@ public class FloorController : MonoBehaviour
     // === Life Cycle === //
     void Awake()
     {
-        rise = GetComponent<FloorRise>();
+        rise = GetComponent<PlatformRise>();
     }
 
     void Update()
