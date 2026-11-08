@@ -916,7 +916,7 @@ MonoBehaviour:
   - {fileID: 17125074}
   - {fileID: 1353245918}
   - {fileID: 838289055}
-  interval: 0.7
+  frequency: 61
 --- !u!1 &760221428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1114,7 +1114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb83186a67f3f944daf9c4f52884bb43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  speed: 15
+  speed: 6
   CanMove: 1
 --- !u!114 &1209283957
 MonoBehaviour:
@@ -1818,7 +1818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5806400079795722545, guid: 6ab78b7d3afa0164e9ca3edf56a8078b, type: 3}
       propertyPath: m_Name
-      value: Floor-Normal
+      value: Platform-Normal
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

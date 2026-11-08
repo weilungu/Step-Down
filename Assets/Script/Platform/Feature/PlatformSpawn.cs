@@ -7,7 +7,7 @@ public class PlatformSpawn : MonoBehaviour
     [SerializeField] GameObject[] spawnPoints;
     
     [Header("Time Setting")]
-    public float interval = 1f;
+    [Range(1, 50)] public int frequency = 10;
     
     // === API === //
     public void SpawnFloor()
