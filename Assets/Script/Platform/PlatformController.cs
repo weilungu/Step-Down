@@ -15,10 +15,13 @@ public class FloorController : MonoBehaviour
         rise = GetComponent<PlatformRise>();
     }
 
+    void Start()
+    {
+        Destroy(gameObject, destroyTime);
+    }
+
     void Update()
     {
-        rise.Rise();
-        
-        Destroy(gameObject, destroyTime);
+        rise.Rising();
     }
 }
