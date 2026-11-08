@@ -12,9 +12,11 @@ public class PlatformSpawn : MonoBehaviour
     // === API === //
     public void SpawnFloor()
     {
+        int randomIndex = Random.Range(0, spawnPoints.Length);
+        
         Instantiate(
             original: floor,
-            position: spawnPoints[0].transform.position,
+            position: spawnPoints[randomIndex].transform.position,
             rotation: Quaternion.identity,
             parent:   transform
         );
