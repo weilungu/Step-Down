@@ -916,7 +916,7 @@ MonoBehaviour:
   - {fileID: 17125074}
   - {fileID: 1353245918}
   - {fileID: 838289055}
-  frequency: 61
+  frequency: 50
 --- !u!1 &760221428
 GameObject:
   m_ObjectHideFlags: 0
