@@ -5,19 +5,19 @@ public class PlatformController : MonoBehaviour
 {
     // Components
     PlatformRise rise;
-    PlatformDestroyer destroyer;
+    Destroyer destroyer;
     
     
     // === Life Cycle === //
     void Awake()
     {
         rise = GetComponent<PlatformRise>();
-        destroyer = GetComponent<PlatformDestroyer>();
+        destroyer = GetComponent<Destroyer>();
     }
 
     void Start()
     {
-        destroyer.DestroyAtTime();
+        destroyer.AtTime();
     }
 
     void Update()
@@ -26,6 +26,6 @@ public class PlatformController : MonoBehaviour
         rise.Rising();
         
         // platform destroyed
-        destroyer.DestroyAtHeight();
+        destroyer.AtHeight();
     }
 }
