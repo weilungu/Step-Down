@@ -1076,7 +1076,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Destroyer
   destroyTime: 0
-  destroyPositon: {x: 0, y: -6}
+  destroyPositonY: -6
 --- !u!1 &1739407823
 GameObject:
   m_ObjectHideFlags: 0
@@ -1197,7 +1197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Destroyer
   destroyTime: 5
-  destroyPositon: {x: 0, y: 6}
+  destroyPositonY: 6
 --- !u!1 &1774514306
 GameObject:
   m_ObjectHideFlags: 0

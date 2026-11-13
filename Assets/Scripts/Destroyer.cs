@@ -6,14 +6,14 @@ public class Destroyer : MonoBehaviour
     [SerializeField, Min(0f)] float destroyTime;
     [Space]
     
-    [SerializeField] Vector2 destroyPositon;
+    [SerializeField] float destroyPositonY;
     
     
     // === API === \\
     public void DestroyAtHeight(bool isPositive)
     {
         float targetHeight, currentHeight;
-        targetHeight = destroyPositon.y;
+        targetHeight = destroyPositonY;
         currentHeight = transform.position.y;
 
         bool higherThanTarget, lowerThanTarget;
