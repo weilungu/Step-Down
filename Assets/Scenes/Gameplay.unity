@@ -883,6 +883,7 @@ GameObject:
   - component: {fileID: 1665657816}
   - component: {fileID: 1665657820}
   - component: {fileID: 1665657821}
+  - component: {fileID: 1665657822}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1062,6 +1063,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   speed: 15
+--- !u!114 &1665657822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665657813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfae334d010b85c448db4ea7ee01f32b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Destroyer
+  destroyTime: 0
+  destroyPositon: {x: 0, y: -6}
 --- !u!1 &1739407823
 GameObject:
   m_ObjectHideFlags: 0

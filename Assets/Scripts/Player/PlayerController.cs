@@ -2,20 +2,26 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-// PlayerController
-    
-// Component
+    // Components
     PlayerMovement move;
+    Destroyer destroyer;
     
     // Private Values
     GameObject currPlatform;
 
-// === Life Cycle === //
+    
+    // === Life Cycle === //
     void Awake()
     {
         move = GetComponent<PlayerMovement>();
+        destroyer = GetComponent<Destroyer>();
     }
 
+    void Update()
+    {
+        destroyer.DestroyAtHeight(isPositive: false);
+    }
+    
     void FixedUpdate()
     {
         move.Movement();

@@ -3,22 +3,32 @@ using UnityEngine;
 public class Destroyer : MonoBehaviour
 {
     // Inspector Values
-    [SerializeField, Min(0f)] float destroyTime = 5f;
+    [SerializeField, Min(0f)] float destroyTime;
     [Space]
     
     [SerializeField] Vector2 destroyPositon;
     
     
     // === API === \\
-    public void AtHeight()
+    public void DestroyAtHeight(bool isPositive)
     {
-        float targetHeight = destroyPositon.y;
-        float currentHeight = transform.position.y;
+        float targetHeight, currentHeight;
+        targetHeight = destroyPositon.y;
+        currentHeight = transform.position.y;
+
+        bool higherThanTarget, lowerThanTarget;
+        higherThanTarget = currentHeight >= targetHeight;
+        lowerThanTarget = currentHeight <= targetHeight;
+
         
-        if (currentHeight >= targetHeight)
+        if (isPositive && higherThanTarget ||
+            !isPositive && lowerThanTarget)
+        {
             Destroy(gameObject);
+        }
+
     }
 
-    public void AtTime()
+    public void DestroyAfterTime()
         => Destroy(gameObject, destroyTime);
 }

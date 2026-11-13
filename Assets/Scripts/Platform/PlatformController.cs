@@ -17,7 +17,7 @@ public class PlatformController : MonoBehaviour
 
     void Start()
     {
-        destroyer.AtTime();
+        destroyer.DestroyAfterTime();
     }
 
     void Update()
@@ -26,6 +26,6 @@ public class PlatformController : MonoBehaviour
         rise.Rising();
         
         // platform destroyed
-        destroyer.AtHeight();
+        destroyer.DestroyAtHeight(isPositive: true);
     }
 }
