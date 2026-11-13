@@ -1,29 +1,31 @@
+using System;
 using UnityEngine;
 
 public class PlatformController : MonoBehaviour
 {
-    // PlatformController
-
-// Awake
+    // Components
     PlatformRise rise;
-
-// Inspector
-    [SerializeField, Range(0f, 10f)] float destroyTime = 5f;
-
-// === Life Cycle === //
+    PlatformDestroyer destroyer;
+    
+    
+    // === Life Cycle === //
     void Awake()
     {
         rise = GetComponent<PlatformRise>();
+        destroyer = GetComponent<PlatformDestroyer>();
     }
 
     void Start()
     {
-        Destroy(gameObject, destroyTime);
+        destroyer.DestroyAtTime();
     }
 
     void Update()
     {
+        // platform rise
         rise.Rising();
+        
+        // platform destroyed
+        destroyer.DestroyAtHeight();
     }
-
 }
