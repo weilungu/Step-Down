@@ -3,25 +3,29 @@ using UnityEngine;
 
 public class FloorController : MonoBehaviour
 {
-    // Awake
+    // Components
     PlatformRise rise;
+    PlatformDestroyer destroyer;
     
-    // Inspector
-    [SerializeField] float destroyTime = 5f;
     
     // === Life Cycle === //
     void Awake()
     {
         rise = GetComponent<PlatformRise>();
+        destroyer = GetComponent<PlatformDestroyer>();
     }
 
     void Start()
     {
-        Destroy(gameObject, destroyTime);
+        destroyer.DestroyAtTime();
     }
 
     void Update()
     {
+        // platform rise
         rise.Rising();
+        
+        // platform destroyed
+        destroyer.DestroyAtHeight();
     }
 }
