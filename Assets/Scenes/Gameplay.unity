@@ -644,14 +644,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlatformSpawner
   platformPrefabs:
+  - {fileID: 3144368983004736159, guid: 0f8047c3d1ad8554a971ef108a65b9b1, type: 3}
+  - {fileID: 1591401206941884437, guid: da59a8050a1b28f4b9a8ba58061e4432, type: 3}
+  - {fileID: 1591401206941884437, guid: b00cc81817dcf3d4fa6d31fb5ba3284b, type: 3}
+  - {fileID: 3144368983004736159, guid: b82a2cc4fb52068428fef0ac0eb6c807, type: 3}
   - {fileID: 1591401206941884437, guid: b256e0004a5dba24f88bad432e70df2c, type: 3}
+  - {fileID: 3144368983004736159, guid: 5b7e34eee6bbbd74aa4e2a8df5a6101a, type: 3}
   spawnPoints:
   - {fileID: 1404227379}
   - {fileID: 1170946932}
   - {fileID: 1585088428}
   - {fileID: 127722592}
   - {fileID: 132057700}
-  frequency: 25
+  frequency: 10
 --- !u!1 &919977924
 GameObject:
   m_ObjectHideFlags: 0
