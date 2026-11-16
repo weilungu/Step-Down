@@ -9,6 +9,7 @@ public class PlatformSpawn : MonoBehaviour
     [Header("Time Setting")]
     [Range(1, 50)] public int frequency = 10;
     
+    
     // === API === //
     public void SpawnFloor()
     {

@@ -691,6 +691,7 @@ GameObject:
   - component: {fileID: 592245672}
   - component: {fileID: 592245673}
   - component: {fileID: 592245674}
+  - component: {fileID: 592245675}
   m_Layer: 0
   m_Name: Platform-Manager
   m_TagString: Untagged
@@ -747,6 +748,18 @@ MonoBehaviour:
   - {fileID: 1353245918}
   - {fileID: 838289055}
   frequency: 50
+--- !u!114 &592245675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592245671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0389fa84a569f84b8289315a58a99c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TimerMachine
 --- !u!1 &760221428
 GameObject:
   m_ObjectHideFlags: 0
