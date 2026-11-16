@@ -18,15 +18,15 @@ public class PlatformSpawner : MonoBehaviour
         randPlatformIdx = Random.Range(0, platformPrefabs.Length);
         randSpawnIdx = Random.Range(0, spawnPoints.Length);
 
-        GameObject plt, sp;
+        GameObject plt, point;
         plt = platformPrefabs[randPlatformIdx];
-        sp = spawnPoints[randSpawnIdx];
+        point = spawnPoints[randSpawnIdx];
         
         Instantiate(
             original: plt,
-            position: sp.transform.position,
+            position: point.transform.position,
             rotation: Quaternion.identity,
-            parent: sp.transform
+            parent: point.transform
         );
     }
 }
