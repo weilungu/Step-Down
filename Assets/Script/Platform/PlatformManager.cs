@@ -9,7 +9,6 @@ public class FloorManager : MonoBehaviour
     TimerMachine timer;
     
     // Private
-    float spawnTimer;
     float spawnInterval;
     
     
@@ -18,19 +17,15 @@ public class FloorManager : MonoBehaviour
     {
         spawner = GetComponent<PlatformSpawn>();
         timer = GetComponent<TimerMachine>();
-        
+    }
+
+    void Start()
+    {
         spawnInterval = (float)(100 - spawner.frequency) / 100;
     }
 
     void Update()
     {
-        // spawnTimer += Time.deltaTime;
-        // if (spawnTimer >= spawnInterval)
-        // {
-        //     spawner.SpawnFloor();
-        //     spawnTimer = 0f;
-        // }
-
         if (timer.Tip(spawnInterval))
         {
             spawner.SpawnFloor();
