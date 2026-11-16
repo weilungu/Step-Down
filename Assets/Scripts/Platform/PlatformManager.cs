@@ -1,16 +1,23 @@
+using System;
 using UnityEngine;
 
 public class PlatformManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    // Component
+    TimerMachine timer;
+    PlatformSpawner spawner;
+    
+    
+    // === Life Cycle === \\
+    void Awake()
     {
-        
+        timer = GetComponent<TimerMachine>();
+        spawner = GetComponentInChildren<PlatformSpawner>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (timer.Tip(1))
+            spawner.Spawn();
     }
 }
