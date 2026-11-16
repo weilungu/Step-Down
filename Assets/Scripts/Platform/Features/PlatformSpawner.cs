@@ -6,9 +6,10 @@ public class PlatformSpawner : MonoBehaviour
 {
     // Inspector Values
     [SerializeField] GameObject[] platformPrefabs;
+    [SerializeField] GameObject[] spawnPoints;
     
     [Space]
-    [SerializeField] GameObject[] spawnPoints;
+    [Range(1, 50)] public int frequency;
     
 
     // === API === \\

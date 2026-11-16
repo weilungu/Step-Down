@@ -7,8 +7,15 @@ public class PlatformManager : MonoBehaviour
     TimerMachine timer;
     PlatformSpawner spawner;
     
+    // Private Values
+    float spawnInterval;
     
     // === Life Cycle === \\
+    void Start()
+    {
+        spawnInterval = (float)(100 - spawner.frequency) / 100;
+    }
+    
     void Awake()
     {
         timer = GetComponent<TimerMachine>();
@@ -17,7 +24,7 @@ public class PlatformManager : MonoBehaviour
 
     void Update()
     {
-        if (timer.Tip(1))
+        if (timer.Tip(spawnInterval))
             spawner.Spawn();
     }
 }

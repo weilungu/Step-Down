@@ -651,6 +651,7 @@ MonoBehaviour:
   - {fileID: 1585088428}
   - {fileID: 127722592}
   - {fileID: 132057700}
+  frequency: 25
 --- !u!1 &919977924
 GameObject:
   m_ObjectHideFlags: 0
@@ -1461,7 +1462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9805cf4514277e42bb60f00c357a32d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  speed: 5
+  speed: 7
 --- !u!114 &1665657822
 MonoBehaviour:
   m_ObjectHideFlags: 0
