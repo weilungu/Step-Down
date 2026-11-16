@@ -43,5 +43,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 2171348583
+    locked: 0
+  - name: Stage
+    uniqueID: 3893274427
+    locked: 0
+  - name: UI
+    uniqueID: 1798935959
+    locked: 0
   m_RenderingLayers:
   - Default
