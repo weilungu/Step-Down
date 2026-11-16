@@ -5,15 +5,19 @@ public class TimerMachine : MonoBehaviour
 {
     float timer;
     
-    
     void Update()
     {
-        timer -= Time.deltaTime;
+        timer += Time.deltaTime;
     }
     
     // === API === \\
-    bool Tip(float interval)
+    public bool Tip(float interval)
     {
-        return interval > 0;
+        if (timer >= interval)
+        {
+            timer -= interval;
+            return true;
+        }
+        return false;
     }
 }
