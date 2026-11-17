@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6406543214264324579}
   - component: {fileID: 3205043194239418289}
   - component: {fileID: 2606218625597541318}
+  - component: {fileID: -2009044028776439714}
   m_Layer: 0
   m_Name: Platform-Bouncy
   m_TagString: Platform
@@ -121,6 +122,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Destroyer
   destroyTime: 5
   destroyPositonY: 6
+--- !u!114 &-2009044028776439714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3144368983004736159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a635594793052443973ca6b5dbe18eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Platform_Bouncy
 --- !u!1 &3431918520525462735
 GameObject:
   m_ObjectHideFlags: 0

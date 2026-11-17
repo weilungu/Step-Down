@@ -4,7 +4,7 @@ using UnityEngine;
 public class Platform : MonoBehaviour
 {
     // Component
-    PlayerController player;
+    protected PlayerController player;
     
     // === Events === //
     void OnCollisionEnter2D(Collision2D other)
@@ -13,8 +13,12 @@ public class Platform : MonoBehaviour
         {
             player = other.gameObject.GetComponent<PlayerController>();
             player.currPlatform = gameObject;
-            
-            print($"Player collided with {gameObject.name}");
+            Features();
         }
+    }
+    
+    protected virtual void Features()
+    {
+        print($"Player collided with {gameObject.name}");
     }
 }
