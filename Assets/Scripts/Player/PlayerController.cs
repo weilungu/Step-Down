@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -6,15 +7,25 @@ public class PlayerController : MonoBehaviour
     PlayerMovement move;
     Destroyer destroyer;
     
-    // Private Values
-    GameObject currPlatform;
-
+    // Inspector Values
+    public GameObject[] hpBar;
+    public int currHp, maxHp;
+    
+    // Public Values
+    [HideInInspector]
+    public GameObject currPlatform;
     
     // === Life Cycle === //
     void Awake()
     {
         move = GetComponent<PlayerMovement>();
         destroyer = GetComponent<Destroyer>();
+    }
+
+    void Start()
+    {
+        currHp = hpBar.Length;
+        maxHp = hpBar.Length;
     }
 
     void Update()
@@ -30,10 +41,6 @@ public class PlayerController : MonoBehaviour
     
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Platform"))
-            currPlatform = other.gameObject;
-        
-        
         if (other.gameObject.CompareTag("Ceiling"))
         {
             BoxCollider2D platformCollider 
