@@ -1285,8 +1285,8 @@ GameObject:
   - component: {fileID: 1665657817}
   - component: {fileID: 1665657818}
   - component: {fileID: 1665657819}
-  - component: {fileID: 1665657822}
   - component: {fileID: 1665657816}
+  - component: {fileID: 1665657822}
   - component: {fileID: 1665657820}
   - component: {fileID: 1665657821}
   - component: {fileID: 1665657823}
@@ -1497,6 +1497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b173a648bbb783543bf19f50a8745813, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerJump
+  speed: 7
 --- !u!114 &1665657824
 MonoBehaviour:
   m_ObjectHideFlags: 0
