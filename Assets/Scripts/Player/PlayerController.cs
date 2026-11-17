@@ -30,10 +30,6 @@ public class PlayerController : MonoBehaviour
     
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Platform"))
-            currPlatform = other.gameObject;
-        
-        
         if (other.gameObject.CompareTag("Ceiling"))
         {
             BoxCollider2D platformCollider 

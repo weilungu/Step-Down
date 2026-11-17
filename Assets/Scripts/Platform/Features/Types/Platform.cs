@@ -12,8 +12,9 @@ public class Platform : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             player = other.gameObject.GetComponent<PlayerController>();
-            
             player.currPlatform = gameObject;
+            
+            print($"Player collided with {gameObject.name}");
         }
     }
 }

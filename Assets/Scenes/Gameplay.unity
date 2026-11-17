@@ -1455,6 +1455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ede0dcf0e88e4b4f96022a1828f98bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  currPlatform: {fileID: 0}
 --- !u!114 &1665657821
 MonoBehaviour:
   m_ObjectHideFlags: 0
