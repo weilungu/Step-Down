@@ -11,15 +11,15 @@ public class PlatformManager : MonoBehaviour
     float spawnInterval;
     
     // === Life Cycle === \\
-    void Start()
-    {
-        spawnInterval = (float)(100 - spawner.frequency) / 100;
-    }
-    
     void Awake()
     {
         timer = GetComponent<TimerMachine>();
         spawner = GetComponentInChildren<PlatformSpawner>();
+    }
+    
+    void Start()
+    {
+        spawnInterval = (float)(100 - spawner.frequency) / 100;
     }
 
     void Update()
