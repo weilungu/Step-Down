@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     Destroyer destroyer;
     
     // Private Values
-    GameObject currPlatform;
+    public GameObject currPlatform;
 
     
     // === Life Cycle === //
