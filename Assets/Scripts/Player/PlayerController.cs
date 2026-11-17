@@ -6,7 +6,11 @@ public class PlayerController : MonoBehaviour
     PlayerMovement move;
     Destroyer destroyer;
     
-    // Private Values
+    // Inspector Values
+    public GameObject[] hp;
+    
+    // Public Values
+    [HideInInspector]
     public GameObject currPlatform;
 
     
