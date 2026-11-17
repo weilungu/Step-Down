@@ -19,6 +19,7 @@ public class Platform : MonoBehaviour
     
     protected virtual void Features()
     {
-        print($"Player collided with {gameObject.name}");
+        // 回血
+        print("回血");
     }
 }
