@@ -1430,7 +1430,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1533268890}
   m_Layer: 0
-  m_Name: Health
+  m_Name: HP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1762,10 +1762,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ede0dcf0e88e4b4f96022a1828f98bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  hp:
+  hpBar:
   - {fileID: 1646098184}
   - {fileID: 1029099392}
   - {fileID: 422661189}
+  currHp: 0
+  maxHp: 0
   currPlatform: {fileID: 0}
 --- !u!114 &1665657821
 MonoBehaviour:

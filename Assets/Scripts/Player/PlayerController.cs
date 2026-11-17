@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -7,18 +8,24 @@ public class PlayerController : MonoBehaviour
     Destroyer destroyer;
     
     // Inspector Values
-    public GameObject[] hp;
+    public GameObject[] hpBar;
+    public int currHp, maxHp;
     
     // Public Values
     [HideInInspector]
     public GameObject currPlatform;
-
     
     // === Life Cycle === //
     void Awake()
     {
         move = GetComponent<PlayerMovement>();
         destroyer = GetComponent<Destroyer>();
+    }
+
+    void Start()
+    {
+        currHp = hpBar.Length;
+        maxHp = hpBar.Length;
     }
 
     void Update()

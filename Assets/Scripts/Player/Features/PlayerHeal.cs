@@ -1,16 +1,23 @@
+using System;
 using UnityEngine;
 
 public class PlayerHeal : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    PlayerController player;
+
+    void Awake()
     {
-        
+        player = GetComponent<PlayerController>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Heal()
     {
-        
+        if (player.currHp >= player.maxHp)
+            return;
+
+        player.hpBar[player.currHp].SetActive(true);
+        player.currHp++;
+
+        print("回血");
     }
 }
