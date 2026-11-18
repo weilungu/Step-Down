@@ -6,8 +6,11 @@ public class PlayerController : MonoBehaviour
     PlayerMovement move;
     Destroyer destroyer;
     
-    // Private Values
-    GameObject currPlatform;
+    [HideInInspector] public GameObject currPlatform;
+    
+    // HP
+    public GameObject[] hpBar;
+    [HideInInspector] public int currHp, maxHp;
 
     
     // === Life Cycle === //
@@ -15,6 +18,12 @@ public class PlayerController : MonoBehaviour
     {
         move = GetComponent<PlayerMovement>();
         destroyer = GetComponent<Destroyer>();
+    }
+    
+    void Start()
+    {
+        currHp = hpBar.Length;
+        maxHp = hpBar.Length;
     }
 
     void Update()
@@ -30,10 +39,6 @@ public class PlayerController : MonoBehaviour
     
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Platform"))
-            currPlatform = other.gameObject;
-        
-        
         if (other.gameObject.CompareTag("Ceiling"))
         {
             BoxCollider2D platformCollider 
